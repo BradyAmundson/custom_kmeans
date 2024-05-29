@@ -2,10 +2,8 @@ from flask import Flask, jsonify, request
 from flask_limiter import Limiter
 from flask_jwt_extended import JWTManager, jwt_required, create_access_token
 from flask_limiter.util import get_remote_address
-from sklearn.neighbors import KNeighborsClassifier
-from sklearn.decomposition import PCA
 from data_processing import preprocess_data
-from clustering import kmeans_custom, visualize_clusters_3d
+from clustering import kmeans_custom
 import json
 
 app = Flask(__name__)
@@ -50,7 +48,6 @@ def cluster():
     for i, label in enumerate(cluster_labels):
         study_groups[label].append(ids[i])
 
-    print(study_groups)
     return jsonify({'cluster_labels': json.dumps(study_groups)}), 200
 
 
