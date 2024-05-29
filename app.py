@@ -8,7 +8,7 @@ import json
 
 app = Flask(__name__)
 
-# app.config['JWT_ACCESS_TOKEN_EXPIRES'] = os.environ.get('JWT_ACCESS_TOKEN_EXPIRES')
+# app.config['JWT_SECRET_KEY'] = os.environ.get('JWT_SECRET_KEY')
 # app.config['CLIENT_ID'] = os.environ.get('CLIENT_ID')
 # app.config['CLIENT_SECRET'] = os.environ.get('CLIENT_SECRET')
 jwt = JWTManager(app)

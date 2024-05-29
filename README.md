@@ -28,14 +28,14 @@ pip install -r requirements.txt
 
 Configure the application settings by setting the following environment variables:
 
-- `JWT_ACCESS_TOKEN_EXPIRES`: Expiration time for the JWT access tokens.
+- `JWT_SECRET_KEY`: Secret key for the JWT.
 - `CLIENT_ID`: Client ID for authentication.
 - `CLIENT_SECRET`: Client secret for authentication.
 
 Example:
 
 ```bash
-export JWT_ACCESS_TOKEN_EXPIRES=3600
+export JWT_SECRET_KEY==your_secret_key
 export CLIENT_ID=your_client_id
 export CLIENT_SECRET=your_client_secret
 ```
