@@ -1,5 +1,3 @@
-Sure, here's a draft of a README for your Flask application:
-
 # Flask Clustering API
 
 This is a Flask-based API that provides functionalities for user authentication and clustering data. It utilizes JWT for authentication and includes rate limiting to manage request loads. The API also includes custom implementations for data preprocessing and clustering using K-Means.
